@@ -45,8 +45,10 @@ public class RegisterStudent {
 		$("#submit").click();
 
 		$(".table-responsive").shouldHave(text("Mirka Mendeleeva"), text("test@gmail.com"),
-										  text("Female"), text("9111111111"),
-										  text("11 June,1987"), text("Arts"), text("Music"),
-										  text("123.png"), text("Big city"), text("NCR Delhi"));
+// @formatter:off
+										  			text("Female"), text("9111111111"), text("11 June,1987"),
+										  			text("Arts"), text("Music"), text("123.png"),
+										  			text("Big city"), text("NCR Delhi"));
+// @formatter:on
 	}
 }
