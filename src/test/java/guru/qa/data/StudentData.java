@@ -1,7 +1,7 @@
 package guru.qa.data;
 
 import com.github.javafaker.Faker;
-import guru.qa.pages.TestBase;
+import guru.qa.tests.TestBase;
 import java.util.Locale;
 
 public class StudentData extends TestBase {

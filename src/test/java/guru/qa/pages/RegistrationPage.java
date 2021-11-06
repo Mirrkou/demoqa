@@ -68,7 +68,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage uploadPicture() {
-        uploadPictureBtn.uploadFile(new File("src/resources/avatar.png"));
+        uploadPictureBtn.uploadFile(new File("src/test/resources/avatar.png"));
         return this;
     }
 
