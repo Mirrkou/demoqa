@@ -38,5 +38,3 @@ public class RegisterStudent extends StudentData {
                         .checkResultsValue("State and City", "NCR Noida");
     }
 }
-
-

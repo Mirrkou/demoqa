@@ -23,20 +23,20 @@ public class AboutCat {
         myCat3.weight = 3;
         myCat3.age = 7;
 
-        myCat1.openCatInfo();
-        myCat1.voice();
-        myCat1.sleep();
-        myCat1.jump();
+        myCat1.getCatInfo();
+        myCat1.getVoice();
+        myCat1.getSleep();
+        myCat1.getJump();
 
-        myCat2.openCatInfo();
-        myCat2.voice();
-        myCat2.sleep();
-        myCat2.jump();
+        myCat2.getCatInfo();
+        myCat2.getVoice();
+        myCat2.getSleep();
+        myCat2.getJump();
 
-        myCat3.openCatInfo();
-        myCat3.voice();
-        myCat3.sleep();
-        myCat3.jump();
+        myCat3.getCatInfo();
+        myCat3.getVoice();
+        myCat3.getSleep();
+        myCat3.getJump();
 
     }
 

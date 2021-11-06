@@ -7,16 +7,16 @@ public class Cat {
     int weight;
     int age;
 
-    public void openCatInfo() {
+    public void getCatInfo() {
         System.out.println("Name: " + name + "\n" + "Color: " + color +
                            "\n" + "Weight: " + weight + "\n" + "Age: " + age);
     }
 
-    public void voice() {
-        if (name == "Bruce") {
+    public void getVoice() {
+        if (name.equals("Bruce")) {
             System.out.println("Voice: " + "...myao myao myao...");
         }
-        else if (name == "Arseny") {
+        else if (name.equals("Arseny")) {
             System.out.println("Voice: " + "...ph ph ph ph ph ph...");
         }
         else {
@@ -24,11 +24,11 @@ public class Cat {
         }
     }
 
-    public void sleep() {
-        if (name == "Bruce") {
+    public void getSleep() {
+        if (name.equals("Bruce")) {
             System.out.println("Sleep: " + "...hhhrrr hhhrrr...");
         }
-        else if (name == "Arseny") {
+        else if (name.equals("Arseny")) {
             System.out.println("Sleep: " + "...pfuuu pfuuu ...");
         }
         else {
@@ -40,11 +40,11 @@ public class Cat {
         }
     }
 
-    public void jump() {
-        if (name == "Bruce") {
+    public void getJump() {
+        if (name.equals("Bruce")) {
             System.out.println("Jump: " + "...pump pump...");
         }
-        else if (name == "Arseny") {
+        else if (name.equals("Arseny")) {
             System.out.println("Jump: " + "...BAAADAAAMS...");
         }
         else {
