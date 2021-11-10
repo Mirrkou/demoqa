@@ -15,7 +15,7 @@ public class StepLambdaTest {
 
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final Integer ISSUE_NUMBER = 56;
-    private static final StepWithAnnotationTest steps = new StepWithAnnotationTest();
+    private static final StepWithAnnotation steps = new StepWithAnnotation();
 
     @DisplayName("Lambda method")
     @Test
@@ -42,10 +42,10 @@ public class StepLambdaTest {
     @DisplayName("Annotation method")
     @Test
     public void testAnnotation() {
-        steps.openMainPage();
-        steps.searchForRepository(REPOSITORY);
-        steps.goToRepository(REPOSITORY);
-        steps.openIssueTab();
-        steps.shouldSeeIssueWithNumber(ISSUE_NUMBER);
+        steps.openMainPage()
+             .searchForRepository(REPOSITORY)
+             .goToRepository(REPOSITORY)
+             .openIssueTab()
+             .shouldSeeIssueWithNumber(ISSUE_NUMBER);
     }
 }

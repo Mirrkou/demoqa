@@ -9,32 +9,37 @@ import static org.openqa.selenium.By.partialLinkText;
 
 import io.qameta.allure.Step;
 
-public class StepWithAnnotationTest {
+public class StepWithAnnotation {
 
     @Step("Открыть главную страницу")
-    public void openMainPage() {
+    public StepWithAnnotation openMainPage() {
         open("https://github.com");
+        return this;
     }
 
     @Step("Найти репозиторий {repository}")
-    public void searchForRepository(String repository) {
+    public StepWithAnnotation searchForRepository(String repository) {
         $(".header-search-input").click();
         $(".header-search-input").sendKeys(repository);
         $(".header-search-input").submit();
+        return this;
     }
 
     @Step("Перейти в репозиторий {repository}")
-    public void goToRepository(String repository) {
+    public StepWithAnnotation goToRepository(String repository) {
         $(linkText(repository)).click();
+        return this;
     }
 
     @Step("Открыть вкладку Issues")
-    public void openIssueTab() {
+    public StepWithAnnotation openIssueTab() {
         $(partialLinkText("Issues")).click();
+        return this;
     }
 
     @Step("Проверить, что существует Issue с номером {number}")
-    public void shouldSeeIssueWithNumber(int number) {
+    public StepWithAnnotation shouldSeeIssueWithNumber(int number) {
         $(withText("#" + number)).should(visible);
+        return this;
     }
 }
