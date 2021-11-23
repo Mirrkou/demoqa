@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -18,6 +19,7 @@ public class SelenideTest {
         Configuration.browserSize = "1900x1200";
     }
 
+    @Disabled
     @DisplayName("Домашнее задание №1")
     @Test
     void findExampleForDiv() {
@@ -38,6 +40,7 @@ public class SelenideTest {
         $("ol[start='3']").shouldHave(text("Using JUnit5 extend test class:"));
     }
 
+    @Disabled
     @DisplayName("Домашнее задание №3")
     @Test
     void dragAndDropTest() {

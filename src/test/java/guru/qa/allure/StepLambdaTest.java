@@ -8,6 +8,7 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +18,7 @@ public class StepLambdaTest {
     private static final Integer ISSUE_NUMBER = 56;
     private static final StepWithAnnotation steps = new StepWithAnnotation();
 
+    @Disabled
     @DisplayName("Lambda method")
     @Test
     public void testLambda() {
@@ -39,6 +41,7 @@ public class StepLambdaTest {
         });
     }
 
+    @Disabled
     @DisplayName("Annotation method")
     @Test
     public void testAnnotation() {

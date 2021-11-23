@@ -2,6 +2,7 @@ package guru.qa.tests;
 
 import guru.qa.data.StudentData;
 import guru.qa.pages.RegistrationPage;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -9,6 +10,7 @@ public class RegisterStudent extends StudentData {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
+    @Disabled
     @DisplayName("Регистрация студента")
     @Test
     void fillForm() {

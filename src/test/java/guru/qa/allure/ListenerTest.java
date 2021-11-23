@@ -9,11 +9,13 @@ import static org.openqa.selenium.By.partialLinkText;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class ListenerTest {
 
+    @Disabled
     @DisplayName("Listener method")
     @Test
     public void testListener() {
