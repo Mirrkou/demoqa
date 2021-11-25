@@ -67,4 +67,10 @@ public class Kitty {
             System.out.println(eyesColor);
         }
     }
+
+    public void rebaseCommit() {
+        System.out.println("Коммит1");
+        System.out.println("Коммит2");
+        System.out.println("Коммит3");
+    }
 }
